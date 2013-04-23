@@ -1,0 +1,79 @@
+/* Universal */
+
+html {
+  overflow-y: scroll;
+}
+
+body { 
+  padding-top: 20px;
+}
+
+section {
+  overflow: auto;
+}
+
+textarea {
+  resize: vertical;
+}
+
+/* Home Page */
+
+#home_page {
+  width:100%;
+  #title {
+    text-align:center;
+    margin-bottom: 20px;
+    font-size: xx-large;
+  }
+  #nav {
+    text-align:center;
+    span {
+      margin: 30px;
+      font-size: large;
+      a {
+        color: #939393;
+        text-decoration:none;
+        &:hover {
+          color: #5D5D5D;
+          text-decoration:underline;
+        }
+      }
+    }
+  }
+  #content {
+    text-align:center;
+    width:100%;
+    #login {
+      background-color:#DBDBDB;
+      width:25%;
+      margin:10px;
+    }
+    #articles {
+      background-color:#EBEBEB;
+      width:50%;
+      margin:10px;
+    }
+    #events {
+      background-color:#DBDBDB;
+      width:25%;
+      margin:10px;
+    }
+  }
+  #footer {
+    text-align:center;
+    span {
+      margin:30px;
+      a {
+        color:black;
+        text-decoration:none;
+        &:hover {
+          text-decoration:underline;
+        }
+      }
+    }
+    #copyright {
+      float:right;
+    }
+  }
+}
+

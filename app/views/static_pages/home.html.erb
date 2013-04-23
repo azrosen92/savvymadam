@@ -1,0 +1,23 @@
+<% provide(:title, 'Home') %>
+
+<div id="home_page">
+  <div id="title">Title</div>
+  <div id="nav">
+    <%= render 'shared/home/nav' %>
+  </div>
+  <div id="banner"></div>
+  <div id="content">
+    <span id="login">Login
+      <%= render 'shared/home/login' %>
+    </span>
+    <span id="articles">Articles
+      <%= render 'shared/home/articles' %>
+    </span>
+    <span id="events">Upcoming Events
+      <%= render 'shared/home/events' %>
+    </span>
+  </div>
+  <div id="footer">
+    <%= render 'shared/home/footer' %>
+  </div>
+</div>
