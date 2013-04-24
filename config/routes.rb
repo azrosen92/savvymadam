@@ -1,4 +1,10 @@
 AfricaJobSite::Application.routes.draw do
+  get "users/index"
+
+  get "users/new"
+
+  get "users/create"
+
   root :to => 'static_pages#home'
 
   match '/about', :to => 'static_pages#about'

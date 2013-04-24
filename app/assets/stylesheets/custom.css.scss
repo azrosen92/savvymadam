@@ -43,17 +43,30 @@ textarea {
   #content {
     text-align:center;
     width:100%;
+    margin-top:15px;
+    color: #606060;
+    
     #login {
       background-color:#DBDBDB;
       width:25%;
       margin:10px;
     }
     #articles {
+      font-size: 300%;
+      text-align:left;
       background-color:#EBEBEB;
       width:50%;
       margin:10px;
+      .article_content {
+        font-size: medium;
+        .article_title {
+          font-size: large;
+          color:#000000;
+        }
+      }
     }
     #events {
+      font-size:200%;
       background-color:#DBDBDB;
       width:25%;
       margin:10px;

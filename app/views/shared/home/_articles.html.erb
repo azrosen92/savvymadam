@@ -1,0 +1,8 @@
+<% @articles.each do |article| %>
+  <div id="article_content">
+    <span class="article_title">
+      <%= article.title.titleize %>:
+    </span>
+  </div>
+  <%= article.body %>
+<% end %>
