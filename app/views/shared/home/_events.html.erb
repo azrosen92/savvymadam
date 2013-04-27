@@ -1,0 +1,9 @@
+<% @events.each do |event| %>
+  <div class="events_content">
+    <div class="events_title">
+      <%= event.title.titleize %>
+      
+    </div>
+  </div>
+  <%= event.body %>
+<% end %>

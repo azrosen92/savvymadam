@@ -12,3 +12,11 @@ def make_articles
     Article.create!(title: title, body: body)
   end
 end
+
+def make_events
+     10.times do |n|
+     title = Faker::Lorem.words
+     body = Faker::Lorem.paragraph
+     Events.create!(title: title, body: body)
+  end
+end	

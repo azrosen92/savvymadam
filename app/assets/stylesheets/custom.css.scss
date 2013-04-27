@@ -70,6 +70,13 @@ textarea {
       background-color:#DBDBDB;
       width:25%;
       margin:10px;
+      .events_content {
+        font-size: medium;
+       .events_title {
+         font-size: large;
+	 color: #000;
+       }
+      }		      
     }
   }
   #footer {
