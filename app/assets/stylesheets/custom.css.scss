@@ -19,7 +19,6 @@ textarea {
 /* Home Page */
 
 #home_page {
-  width:100%;
   #title {
     text-align:center;
     margin-bottom: 20px;
@@ -42,7 +41,7 @@ textarea {
   }
   #content {
     text-align:center;
-    width:100%;
+    height:500px;
     margin-top:15px;
     color: #606060;
     
@@ -50,15 +49,21 @@ textarea {
       background-color:#DBDBDB;
       width:25%;
       margin:10px;
+      float:left;
     }
     #articles {
       font-size: 300%;
       text-align:left;
       background-color:#EBEBEB;
-      width:50%;
+      width:40%;
       margin:10px;
+      float:left;
+      overflow:hidden;
+      padding:10px;
       .article_content {
         font-size: medium;
+        overflow:hidden;
+        margin-bottom:5px;
         .article_title {
           font-size: large;
           color:#000000;
@@ -70,6 +75,7 @@ textarea {
       background-color:#DBDBDB;
       width:25%;
       margin:10px;
+<<<<<<< HEAD
       .events_content {
         font-size: medium;
        .events_title {
@@ -77,6 +83,9 @@ textarea {
 	 color: #000;
        }
       }		      
+=======
+      float:left;
+>>>>>>> cc348d15e0ce5c00a3ae823f3d895bbbb09390aa
     }
   }
   #footer {
