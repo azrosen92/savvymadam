@@ -18,6 +18,6 @@ def make_events
   10.times do |n|
     title = Faker::Lorem.words
     body = Faker::Lorem.paragraph
-    Events.create!(title: title, body: body)
+    Event.create!(title: title, content: body)
   end
 end	
