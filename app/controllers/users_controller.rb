@@ -13,6 +13,9 @@ class UsersController < ApplicationController
   def create
     @user = User.new(params[:user])
     if @user.save
+      #TODO
+      #add welcome email using action mailer 
+      #http://guides.rubyonrails.org/action_mailer_basics.html
       sign_in @user
       flash[:success] = "Welcome to the Savvy Madam!"
       redirect_to @user

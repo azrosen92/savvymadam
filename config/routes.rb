@@ -1,5 +1,9 @@
 AfricaJobSite::Application.routes.draw do
   
+  get "contact/new"
+
+  get "contact/create"
+
   root :to => 'static_pages#home'
 
   resources :users
