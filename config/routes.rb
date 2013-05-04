@@ -1,4 +1,6 @@
 AfricaJobSite::Application.routes.draw do
+  get "articles/index"
+
   get "users/index"
 
   get "users/new"
@@ -11,6 +13,7 @@ AfricaJobSite::Application.routes.draw do
   match '/contact', :to => 'static_pages#contact'
   match '/terms', :to => 'static_pages#terms'
   match '/privacy', :to => 'static_pages#privacy'
+  match '/events', :to => 'events#index'
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

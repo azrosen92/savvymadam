@@ -1,9 +1,8 @@
 <% @events.each do |event| %>
   <div class="events_content">
-    <div class="events_title">
+    <span class="events_title">
       <%= event.title.titleize %>
-      
-    </div>
+    </span>
+    <%= event.content %>
   </div>
-  <%= event.content %>
 <% end %>
