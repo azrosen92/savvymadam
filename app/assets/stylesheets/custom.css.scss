@@ -1,3 +1,9 @@
+@mixin box_sizing {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -box-sizing: border-box;
+}
+
 /* Universal */
 
 html {
@@ -14,6 +20,16 @@ section {
 
 textarea {
   resize: vertical;
+}
+
+/* miscellaneous */
+
+.debug_dump {
+  clear: both;
+  float: left;
+  width: 100%;
+  margin-top: 45px;
+  @include box_sizing;
 }
 
 /* Home Page */
@@ -96,6 +112,25 @@ textarea {
     }
   }
   #articles {
+  #content {
+    text-align:center;
+    height:500px;
+    margin-top:15px;
+    color: #606060;
+    
+    #login {
+      background-color:#DBDBDB;
+      width:25%;
+      margin:10px;
+      float:left;
+      input {
+        
+      }
+      .sign_in_button {
+
+      }
+    }
+    #articles {
       font-size: 300%;
       text-align:left;
       background-color:#EBEBEB;
@@ -133,7 +168,7 @@ textarea {
        }
       }	      
     }
+}
 
 
-
-
+}

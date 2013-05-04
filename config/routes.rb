@@ -1,19 +1,33 @@
 AfricaJobSite::Application.routes.draw do
+
   get "articles/index"
 
   get "users/index"
 
-  get "users/new"
+  
+  get "contact/new"
 
-  get "users/create"
+
+  get "contact/create"
 
   root :to => 'static_pages#home'
 
+  resources :users
+  resources :sessions, only: [:new, :create, :destroy]
+
+  #######################
+  # static pages routes #
+  #######################
   match '/about', :to => 'static_pages#about'
   match '/contact', :to => 'static_pages#contact'
   match '/terms', :to => 'static_pages#terms'
   match '/privacy', :to => 'static_pages#privacy'
   match '/events', :to => 'events#index'
+
+  ###################
+  # Sessions routes #
+  ###################
+  #match '/sessions', :to => 'sessions#create'
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

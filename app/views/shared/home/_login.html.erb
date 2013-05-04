@@ -1,0 +1,9 @@
+<%= form_for :session do |f| %>
+  <div>
+    Email: <%= f.text_field :email %>
+  </div>
+  <div>
+    Password: <%= f.password_field :password %>
+  </div>
+  <%= f.submit "Sign in", class: "sign_in_button" %>
+<% end %>
