@@ -1,14 +1,14 @@
 AfricaJobSite::Application.routes.draw do
 
-  get "articles/index"
+  #get "articles/index"
 
-  get "users/index"
+  #get "users/index"
 
   
-  get "contact/new"
+  #get "contact/new"
 
 
-  get "contact/create"
+  #get "contact/create"
 
   root :to => 'static_pages#home'
 
@@ -23,6 +23,11 @@ AfricaJobSite::Application.routes.draw do
   match '/terms', :to => 'static_pages#terms'
   match '/privacy', :to => 'static_pages#privacy'
   match '/events', :to => 'events#index'
+
+  ################
+  # Users routes #
+  ################
+  match '/signup', :to => 'users#new'
 
   ###################
   # Sessions routes #

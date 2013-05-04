@@ -172,3 +172,40 @@ textarea {
 
 
 }
+
+/* Sign up page */
+#sign_up_page {
+  text-align:center;
+  background-color:#595c8b;
+  margin:10px;
+  color:#FFF;
+  h1 {
+    padding-top:20px;
+  }
+  .sign_up_form_container {
+    .form_text {
+      padding:10px;
+      display:block;
+      text-align:center;
+    }
+
+    .form_input {
+      padding:5px;
+      display:block;
+      margin-right:auto;
+      margin-left:auto;
+    }
+    
+    .form_button_container {
+      padding:20px;    
+      .form_button {
+        display:block;
+        background-color:#595c8b;
+        margin-right:auto;
+        margin-left:auto;
+      }
+    }
+  }
+}
+
+

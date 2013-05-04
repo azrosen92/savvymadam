@@ -1,2 +1,24 @@
-<h1>Users#new</h1>
-<p>Find me in app/views/users/new.html.erb</p>
+<% provide(:title, "Sign up") %>
+<div id="sign_up_page">
+  <h1>Sign up here!</h1>
+  <div class="sign_up_form_container">
+    <%= form_for(@user) do |f| %>
+      
+      <%= f.label :name, class: 'form_text' %>
+      <%= f.text_field :name, class: 'form_input' %>
+
+      <%= f.label :email, class: 'form_text' %>
+      <%= f.text_field :email, class: 'form_input' %>
+
+      <%= f.label :password, class: 'form_text' %>
+      <%= f.password_field :password, class: 'form_input' %>
+
+      <%= f.label :password_confirmation, "Confirmation", class: 'form_text' %>
+      <%= f.password_field :password_confirmation, class: 'form_input' %>
+
+      <div class="form_button_container">
+        <%= f.submit "Create account", class: 'form_button' %>
+      </div>
+    <% end %>
+  </div>
+</div>
