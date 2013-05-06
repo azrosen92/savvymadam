@@ -6,6 +6,10 @@ class UsersController < ApplicationController
   def index
   end
 
+  def show
+    @user = User.find(params[:id])
+  end
+
   def new
     @user = User.new
   end
@@ -14,9 +18,8 @@ class UsersController < ApplicationController
     @user = User.new(params[:user])
     if @user.save
       UserMailer.welcome_email(@user).deliver
-      sign_in @user
       flash[:success] = "Welcome to the Savvy Madam!"
-      redirect_to @user
+      sign_in @user
     else
       render 'new'
     end

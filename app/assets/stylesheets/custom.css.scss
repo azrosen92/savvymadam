@@ -32,6 +32,15 @@ textarea {
   @include box_sizing;
 }
 
+/* Error Messages */
+#error_explanation {
+  color: red;
+
+  ul {
+    text-align: left;
+  }
+}
+
 /* Home Page */
 
 #home_page {
@@ -154,9 +163,6 @@ textarea {
         }
       }
     } 
-  }
-
-
   #footer {
     text-align:center;
     span {
@@ -174,7 +180,7 @@ textarea {
     }
   }
 
-}
+
 
 
 /* Archived Page */
@@ -255,4 +261,59 @@ textarea {
 }
 
 
+
+/* Form stylings */
+#form_page {
+  text-align:center;
+  background-color:#595c8b;
+  margin:10px;
+  color:#FFF;
+  width:50%;
+  h1 {
+    padding-top:20px;
+  }
+  .form_container {
+    .form_text {
+      padding:10px;
+      display:block;
+      text-align:center;
+    }
+
+    .form_input {
+      padding:5px;
+      display:block;
+      margin-right:auto;
+      margin-left:auto;
+    }
+    
+    .form_button_container {
+      padding:20px;    
+      .form_button {
+        display:block;
+        background-color:#595c8b;
+        margin-right:auto;
+        margin-left:auto;
+        padding:10px;
+        background-color: #FFF;
+      }
+    }
+  }
+}
+
+/* Contact Form */
+#contact {
+  margin-top:20px;
+  #contact_form {
+    label {
+      margin-top:10px;
+      display:block;
+    }
+    input {
+      display:block;
+    }
+    .contact_button {
+      margin-top:10px;
+    }
+  }
+}
 
