@@ -32,6 +32,15 @@ textarea {
   @include box_sizing;
 }
 
+/* Error Messages */
+#error_explanation {
+  color: red;
+
+  ul {
+    text-align: left;
+  }
+}
+
 /* Home Page */
 
 #home_page {
@@ -179,6 +188,7 @@ textarea {
   background-color:#595c8b;
   margin:10px;
   color:#FFF;
+  width:50%;
   h1 {
     padding-top:20px;
   }
@@ -203,6 +213,8 @@ textarea {
         background-color:#595c8b;
         margin-right:auto;
         margin-left:auto;
+        padding:10px;
+        background-color: #FFF;
       }
     }
   }

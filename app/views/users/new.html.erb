@@ -3,7 +3,8 @@
   <h1>Sign up here!</h1>
   <div class="sign_up_form_container">
     <%= form_for(@user) do |f| %>
-      
+      <%= render 'shared/error_messages', object: @user %>
+
       <%= f.label :name, class: 'form_text' %>
       <%= f.text_field :name, class: 'form_input' %>
 

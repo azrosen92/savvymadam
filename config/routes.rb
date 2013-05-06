@@ -1,18 +1,8 @@
 AfricaJobSite::Application.routes.draw do
 
-  #get "articles/index"
-
-  #get "users/index"
-
-  
-  #get "contact/new"
-
-
-  #get "contact/create"
-
   root :to => 'static_pages#home'
 
-  resources :users
+  resources :users, only: [:new, :create, :show]
   resources :sessions, only: [:new, :create, :destroy]
 
   #######################
@@ -32,7 +22,8 @@ AfricaJobSite::Application.routes.draw do
   ###################
   # Sessions routes #
   ###################
-  #match '/sessions', :to => 'sessions#create'
+  match '/signin', :to => 'sessions#new'
+  match '/signout', :to => 'sessions#destroy', via: :delete
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
