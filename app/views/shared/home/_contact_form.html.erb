@@ -1,0 +1,19 @@
+<div id="contact_form">
+  <%= form_for(@contact) do |f| %>
+    <%= render 'shared/error_messages', object: @contact %>
+
+    <%= f.label :name, 'Your Name (required)' %>
+    <%= f.text_field :name %>
+
+    <%= f.label :email, 'Your Email (required)' %>
+    <%= f.text_field :email %>
+
+    <%= f.label :subject %>
+    <%= f.text_field :subject %>
+
+    <%= f.label :message, 'Your Message' %>
+    <%= f.text_field :message, class: 'contact_message' %>
+
+    <%= f.submit "Send", class: 'contact_button' %>
+  <% end %>
+</div>

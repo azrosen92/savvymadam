@@ -6,7 +6,7 @@ class Contact
   attribute :subject
   attribute :message
 
-  attr_accesible :name, :email, :subject, :message
+  #attr_accessible :name, :email, :subject, :message
 
   validates_presence_of :name
   VALID_EMAIL_REGEX = /\A[\w+\-.]+@[a-z\d\-.]+\.[a-z]+\z/i

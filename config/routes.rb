@@ -4,6 +4,7 @@ AfricaJobSite::Application.routes.draw do
 
   resources :users, only: [:new, :create, :show]
   resources :sessions, only: [:new, :create, :destroy]
+  resources :contacts, only: [:new, :create]
 
   #######################
   # static pages routes #

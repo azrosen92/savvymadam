@@ -220,4 +220,22 @@ textarea {
   }
 }
 
+/* Contact Form */
+#contact {
+  margin-top:20px;
+  #contact_form {
+    label {
+      margin-top:10px;
+      display:block;
+    }
+    input {
+      display:block;
+    }
+    .contact_button {
+      margin-top:10px;
+    }
+  }
+}
+
+
 
