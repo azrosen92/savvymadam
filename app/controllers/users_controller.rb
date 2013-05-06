@@ -19,7 +19,7 @@ class UsersController < ApplicationController
     if @user.save
       UserMailer.welcome_email(@user).deliver
       flash[:success] = "Welcome to the Savvy Madam!"
-      redirect_to @user
+      sign_in @user
     else
       render 'new'
     end
