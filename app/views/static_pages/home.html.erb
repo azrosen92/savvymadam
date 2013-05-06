@@ -4,27 +4,15 @@
 <div id="home_page">
 
   <div id="banner">
-    <img id="resize" src="http://agroclimate.org/adaptation/images/water-harvesting-for-irrigation-web.jpg"/>
-    <img id="resize" src="http://captainkimo.com/wp-content/uploads/2010/07/high-dynamic-range-panorama-landscape-moutnain-sunset.jpg"/>
+    <%= image_tag("home/banner.jpg", alt:"rss feed", id:"resize") %>    
+    <%= image_tag("home/title.jpg", alt:"rss feed", id:"resize") %>    
+   </div>
+
+  <div id="content">
+    <div id="join"><%= render 'shared/home/join' %></div>
+    <div id="columns"><%= render 'shared/home/columns' %></div>    
+    <div id="info"><%= render 'shared/home/info' %></div>
   </div>
-
-  <div id="content">   
-    <div id="login">Login
-      <%= render 'shared/home/login' %>
-    </div>
-
-    <div id="intro">
-      The Savvy Madam is an Exclusive Community for Young Professional African Women.
-    </div>
-
-    <div id="quote">
-      The Savvy Madam is an Exclusive Community for Young Professional African Women.
-    </div>
-
-
-  </div>
-
-
 
   <div id="contact">
   </div>
