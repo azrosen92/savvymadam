@@ -12,6 +12,8 @@ html {
 
 body { 
   padding-top: 20px;
+  background-image: url('background.png');
+  background-attachment:fixed;
 }
 
 section {
@@ -47,9 +49,9 @@ textarea {
   margin-right:auto;  
   max-width:800px;
   min-width: 500px;  
-  width:60%;
-  font-family:Arial;
+  width:75%;
   color:#666;
+  background-color:white;
 
   #banner {
     margin-bottom: 20px;
@@ -114,7 +116,7 @@ textarea {
     }
     #columns {
       background-color:#eee;
-      height:380px;
+      height:400px;
       margin-bottom:20px;
       padding-top:2%;
       #title {
@@ -151,18 +153,17 @@ textarea {
     }
     #info {
       #quotebox {
-       background-color: #ddd;
        margin-bottom:20px;
        height:310px;
        width:100%;
         #box1{
           width:45%;
-          font-size: 190%;
+          font-size: 18px;
           text-align:left;
           padding:5%;
           margin-bottom:20px;
           float:left;
-          background-color:#aaa;
+          display:inline;
         }
         #box2 {
           max-width:45%;
@@ -198,6 +199,9 @@ textarea {
       }
     } 
     #press {
+      background-color:#eee;
+      padding:5%;
+      font-size:20px;
       div {
         .span1 {
           display:block;
@@ -352,16 +356,20 @@ textarea {
 /* Contact Form */
 #contact {
   margin-top:20px;
+  margin:5%;
+  font-size:24px;
   #contact_form {
     label {
-      margin-top:10px;
+      margin-top:14px;
       display:block;
+      font-size:14px;
+      color:#bbb;
     }
     input {
       display:block;
     }
     .contact_button {
-      margin-top:10px;
+      margin-top:14px;
     }
   }
 }
