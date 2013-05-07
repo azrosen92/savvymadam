@@ -1,6 +1,12 @@
 class StaticPagesController < ApplicationController
   def home
+<<<<<<< HEAD
     @contact = Contact.new
+=======
+
+    @contact = Contact.new
+
+>>>>>>> origin/master
   end
 
   def about
