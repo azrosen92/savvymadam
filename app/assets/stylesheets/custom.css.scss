@@ -35,7 +35,6 @@ textarea {
 /* Error Messages */
 #error_explanation {
   color: red;
-
   ul {
     text-align: left;
   }
@@ -76,14 +75,32 @@ textarea {
         margin:1%;
         padding-top:20px;
         padding-bottom:20px;
+        a {
+          text-decoration:none;
+          color:#FFF;
+          &:hover {
+            color:#BBBBBB;
+            text-decoration:underline;
+          }
+        }
       }
       #button2{
         width:48%;
         background-color:#8e4165;
+        color:#FFF;
+        text-decoration:none;
         float:left;
         margin:1%;
         padding-top:20px;
         padding-bottom:20px;
+        a {
+          text-decoration:none;
+          color:#FFF;
+          &:hover {
+            color:#BBBBBB;
+            text-decoration:underline;
+          }
+        }
       }
      }
       #intro {
@@ -163,6 +180,19 @@ textarea {
         }
       }
     } 
+    #press {
+      div {
+        .span1 {
+          display:block;
+        }
+        .span2 {
+          display:block;
+        }
+        .span3 {
+          display:block;
+        }
+      }
+    }
   #footer {
     text-align:center;
     span {
@@ -260,7 +290,7 @@ textarea {
     }
 }
 
-
+}
 
 /* Form stylings */
 #form_page {
@@ -299,7 +329,7 @@ textarea {
     }
   }
 }
-
+}
 /* Contact Form */
 #contact {
   margin-top:20px;
@@ -316,4 +346,5 @@ textarea {
     }
   }
 }
+
 
