@@ -116,9 +116,13 @@ textarea {
     }
     #columns {
       background-color:#eee;
-      height:400px;
+      //height:400px;
+      overflow:hidden;
       margin-bottom:20px;
       padding-top:2%;
+      div {
+        overflow:hidden;
+      }
       #title {
         width:30%;
         float:left;
@@ -154,10 +158,11 @@ textarea {
     #info {
       #quotebox {
        margin-bottom:20px;
-       height:310px;
+       //height:310px;
+       overflow:hidden;
        width:100%;
         #box1{
-          width:45%;
+          width:40%;
           font-size: 18px;
           text-align:left;
           padding:5%;
@@ -168,6 +173,7 @@ textarea {
         #box2 {
           max-width:45%;
           max-height:100%;
+          margin-right:2%;
           float:right;
         }
       }
@@ -208,9 +214,11 @@ textarea {
         }
         .span2 {
           display:block;
+          margin-left:30px;
         }
         .span3 {
           display:block;
+          margin-left:60px;
         }
       }
     }
